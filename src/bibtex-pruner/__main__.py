@@ -21,14 +21,24 @@ def fliter_doi():
     pass
 
 
-def main():
+def main(method="perline"):
+    # READ
     bib_file = open("ref.bib", "r", encoding="utf-8")
-    bib = bib_file.readlines()
+    bib:str = bib_file.read()
     bib_file.close()
-    bib_file = open("ref.bib", "w", encoding="utf-8")
-    bib_file.writelines(fliter_link(bib))
-    bib_file.close()
+    # PROCESS
+    if method=="perline":
+        bib_text=fliter_link(bib.split("\n"))
+        
+    if method=="bibtexparser":
+        import bibtexparser
+        library = bibtexparser.parse_string(bib)
 
+    # WRITE
+    bib_file = open("ref.bib", "w", encoding="utf-8")
+    bib_file.writelines(bib_text)
+    bib_file.close()
+    
 
 if __name__ == "__main__":
     # TODO 添加支持自定义bib文件

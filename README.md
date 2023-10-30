@@ -4,6 +4,10 @@ When a bibTeX file exported by Zotero contains too many unnecessary fields
 
 简体中文 | English
 
+## 使用场景
+
+在命令行中运行文件或直接传入bibtex文本（或考虑从剪贴板中读取并写回）
+
 ## 适用场景
 
 国标模板

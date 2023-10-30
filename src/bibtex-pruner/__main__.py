@@ -21,7 +21,7 @@ def fliter_doi():
     pass
 
 
-def main(method="perline"):
+def main(method="bibtexparser"):
     # READ
     bib_file = open("ref.bib", "r", encoding="utf-8")
     bib:str = bib_file.read()
@@ -33,7 +33,7 @@ def main(method="perline"):
     if method=="bibtexparser":
         import bibtexparser
         library = bibtexparser.parse_string(bib)
-
+        print(library)
     # WRITE
     bib_file = open("ref.bib", "w", encoding="utf-8")
     bib_file.writelines(bib_text)

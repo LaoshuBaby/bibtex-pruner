@@ -10,7 +10,8 @@ When a bibTeX file exported by Zotero contains too many unnecessary fields
 
 ## 适用场景
 
-国标模板
+**GB/T 7714—2015** 标准及使用此标准的LaTeX库：
+* https://github.com/zepinglee/gbt7714-bibtex-style
 
 ## 同类工具
 

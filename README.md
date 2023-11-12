@@ -16,3 +16,7 @@ When a bibTeX file exported by Zotero contains too many unnecessary fields
 ## 同类工具
 
 * bibtex-clean: [GitHub(CangyuanLi/bibtex_fields)](https://github.com/CangyuanLi/bibtex_fields), [PyPi(bibtex-clean)](https://pypi.org/project/bibtex-clean/)
+
+## 附加功能
+
+* 如果不是Zotero导出的而又需要处理帽子字符大小写，本工具可以帮您把帽子字符暴力修改为大写（参见[zepinglee/gbt7714-bibtex-style - 不能处理西文姓氏中含如é到É的大小写转换(#145)](https://github.com/zepinglee/gbt7714-bibtex-style/issues/145)）

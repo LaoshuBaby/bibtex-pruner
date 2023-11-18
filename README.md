@@ -20,3 +20,4 @@ When a bibTeX file exported by Zotero contains too many unnecessary fields
 ## 附加功能
 
 * 如果不是Zotero导出的而又需要处理帽子字符大小写，本工具可以帮您把帽子字符暴力修改为大写（参见[zepinglee/gbt7714-bibtex-style - 不能处理西文姓氏中含如é到É的大小写转换(#145)](https://github.com/zepinglee/gbt7714-bibtex-style/issues/145)）
+* 不知道之前有没有在公开场合表达过，但是确实有想处理citation key的想法，不过似乎果然better bibtex已经实现了这个了 https://retorque.re/zotero-better-bibtex/citing/
